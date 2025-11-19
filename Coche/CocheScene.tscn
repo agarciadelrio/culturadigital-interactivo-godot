@@ -1,0 +1,461 @@
+[gd_scene load_steps=97 format=3 uid="uid://df632t8kevi7q"]
+
+[ext_resource type="Texture2D" uid="uid://cmm34rqb8xth8" path="res://Images/rueda.png" id="1_2jke3"]
+[ext_resource type="Script" uid="uid://1o0lccxpucmh" path="res://Coche/coche_scene.gd" id="1_ffpt8"]
+[ext_resource type="Texture2D" uid="uid://ujhtxdxw5jtp" path="res://Images/Person/Driving/driving_8.png" id="2_1at1w"]
+[ext_resource type="Texture2D" uid="uid://0d1fwnkmj6oa" path="res://Images/ibiza.png" id="2_mrli0"]
+[ext_resource type="Texture2D" uid="uid://blg6hjb8fcrn7" path="res://Images/Person/Sitdown/sitdown_0.png" id="3_moi5i"]
+[ext_resource type="Texture2D" uid="uid://dja662vybd5xh" path="res://Images/Person/Driving/driving_9.png" id="3_np7p1"]
+[ext_resource type="Texture2D" uid="uid://vxd6vov3nkgo" path="res://Images/Person/Driving/driving_10.png" id="4_eo5a4"]
+[ext_resource type="Texture2D" uid="uid://dnscyrvrekq4g" path="res://Images/Person/Sitdown/sitdown_1.png" id="4_ugsaa"]
+[ext_resource type="Texture2D" uid="uid://c65610mcrqc0v" path="res://Images/Person/Driving/driving_11.png" id="5_gyu72"]
+[ext_resource type="Texture2D" uid="uid://fqxnux11poyx" path="res://Images/Person/Sitdown/sitdown_2.png" id="5_uh2l3"]
+[ext_resource type="Texture2D" uid="uid://1r2hyjxam2he" path="res://Images/Person/Driving/driving_12.png" id="6_7carg"]
+[ext_resource type="Texture2D" uid="uid://4ahmk3gtd1rr" path="res://Images/Person/Sitdown/sitdown_3.png" id="6_e6v2q"]
+[ext_resource type="Texture2D" uid="uid://c7hlijs3fn2t1" path="res://Images/Person/Sitdown/sitdown_4.png" id="7_2h7kr"]
+[ext_resource type="Texture2D" uid="uid://b37v058rfk0o" path="res://Images/Person/Driving/driving_13.png" id="7_njwgh"]
+[ext_resource type="Texture2D" uid="uid://dpri233rc11h4" path="res://Images/Person/Sitdown/sitdown_5.png" id="8_8xhp4"]
+[ext_resource type="Texture2D" uid="uid://cijfxwtwcxx4g" path="res://Images/Person/Driving/driving_14.png" id="8_loa5o"]
+[ext_resource type="Texture2D" uid="uid://nkv1cw2p5wf" path="res://Images/Person/Sitdown/sitdown_6.png" id="9_57jkb"]
+[ext_resource type="Texture2D" uid="uid://ci4uvni55v0ei" path="res://Images/Person/Driving/driving_15.png" id="9_hvp10"]
+[ext_resource type="Texture2D" uid="uid://l8nbhs87yfp2" path="res://Images/Person/Sitdown/sitdown_7.png" id="10_5cpik"]
+[ext_resource type="Texture2D" uid="uid://ccd3bhrbhopmt" path="res://Images/Person/Driving/driving_16.png" id="10_dft5t"]
+[ext_resource type="Texture2D" uid="uid://skia3l21qhnn" path="res://Images/Person/Driving/driving_17.png" id="11_2rc2v"]
+[ext_resource type="Texture2D" uid="uid://c8u73alp3kuxc" path="res://Images/Person/Sitdown/sitdown_8.png" id="11_mcfvt"]
+[ext_resource type="Texture2D" uid="uid://ccw88ieweh7pd" path="res://Images/Person/Driving/driving_18.png" id="12_dokyh"]
+[ext_resource type="Texture2D" uid="uid://lelx8xs3d1lq" path="res://Images/Person/Sitdown/sitdown_9.png" id="12_f13g0"]
+[ext_resource type="Texture2D" uid="uid://brogb8mkuahy4" path="res://Images/Person/Sitdown/sitdown_10.png" id="13_7s0ku"]
+[ext_resource type="Texture2D" uid="uid://c6xnn8i7b7qmo" path="res://Images/Person/Driving/driving_19.png" id="13_bu6lk"]
+[ext_resource type="Texture2D" uid="uid://ctn8leqbnj6f3" path="res://Images/Person/Sitdown/sitdown_11.png" id="14_crlcg"]
+[ext_resource type="Texture2D" uid="uid://bx6tqj0batnk0" path="res://Images/Person/Driving/driving_20.png" id="14_dhn6n"]
+[ext_resource type="Texture2D" uid="uid://dtjyegbx34wl6" path="res://Images/Person/Driving/driving_21.png" id="15_5t2lp"]
+[ext_resource type="Texture2D" uid="uid://cl3d671copdsw" path="res://Images/Person/Sitdown/sitdown_12.png" id="15_fgmcv"]
+[ext_resource type="Texture2D" uid="uid://bauq3as116icf" path="res://Images/Person/Driving/driving_22.png" id="16_lsme0"]
+[ext_resource type="Texture2D" uid="uid://bnalo5rdfdula" path="res://Images/Person/Sitdown/sitdown_13.png" id="16_t5t3o"]
+[ext_resource type="Texture2D" uid="uid://0wnkb0tsqabv" path="res://Images/Person/Driving/driving_23.png" id="17_22631"]
+[ext_resource type="Texture2D" uid="uid://d2swpm6nwebbe" path="res://Images/Person/Sitdown/sitdown_14.png" id="17_uray6"]
+[ext_resource type="Texture2D" uid="uid://brtjf2h641ycv" path="res://Images/Person/Sitdown/sitdown_15.png" id="18_bm8b5"]
+[ext_resource type="Texture2D" uid="uid://bxcpnhyrnuyhv" path="res://Images/Person/Driving/driving_24.png" id="18_bx6k7"]
+[ext_resource type="Texture2D" uid="uid://bpaklo163iv41" path="res://Images/Person/Driving/driving_25.png" id="19_e7gfi"]
+[ext_resource type="Texture2D" uid="uid://wc0gxii6quyx" path="res://Images/Person/Sitdown/sitdown_16.png" id="19_my8dt"]
+[ext_resource type="Texture2D" uid="uid://d21hi4arfu8ls" path="res://Images/Person/Sitdown/sitdown_17.png" id="20_0o1uh"]
+[ext_resource type="Texture2D" uid="uid://bidkluy3swiml" path="res://Images/Person/Driving/driving_26.png" id="20_vxesl"]
+[ext_resource type="Texture2D" uid="uid://dqjt0385axb7w" path="res://Images/Person/Sitdown/sitdown_18.png" id="21_aismo"]
+[ext_resource type="Texture2D" uid="uid://cs6vbp0ogslul" path="res://Images/Person/Driving/driving_27.png" id="21_xa1cf"]
+[ext_resource type="Texture2D" uid="uid://crblqd375o0gh" path="res://Images/Person/Sitdown/sitdown_19.png" id="22_akyn4"]
+[ext_resource type="Texture2D" uid="uid://nn4ip6d7ett1" path="res://Images/Person/Driving/driving_28.png" id="22_pplwc"]
+[ext_resource type="Texture2D" uid="uid://dux466dfspyki" path="res://Images/Person/Sitdown/sitdown_20.png" id="23_8oqcs"]
+[ext_resource type="Texture2D" uid="uid://d4sbudvtp07i" path="res://Images/Person/Driving/driving_29.png" id="23_f5tqw"]
+[ext_resource type="Texture2D" uid="uid://damst6ebdwt24" path="res://Images/Person/Sitdown/sitdown_21.png" id="24_u132k"]
+[ext_resource type="Texture2D" uid="uid://dkuqj3n73iulc" path="res://Images/Person/Driving/driving_30.png" id="24_uiphf"]
+[ext_resource type="Texture2D" uid="uid://bc7efn4gxbfu3" path="res://Images/Person/Sitdown/sitdown_22.png" id="25_jc2kb"]
+[ext_resource type="Texture2D" uid="uid://ckx4j6purb2j" path="res://Images/Person/Driving/driving_31.png" id="25_qd778"]
+[ext_resource type="Texture2D" uid="uid://byfl2tlu83lvw" path="res://Images/Person/Driving/driving_32.png" id="26_58xbh"]
+[ext_resource type="Texture2D" uid="uid://c1tadvvt1ji8w" path="res://Images/Person/Sitdown/sitdown_23.png" id="26_nctmf"]
+[ext_resource type="Texture2D" uid="uid://3l3vskc57yoe" path="res://Images/Person/Driving/driving_33.png" id="27_jl0hw"]
+[ext_resource type="Texture2D" uid="uid://b7t5isks75uxa" path="res://Images/Person/Sitdown/sitdown_24.png" id="27_xphvq"]
+[ext_resource type="Texture2D" uid="uid://dux66s3nmnfl6" path="res://Images/Person/Sitdown/sitdown_25.png" id="28_a8qsn"]
+[ext_resource type="Texture2D" uid="uid://cgdck1kv1e7w7" path="res://Images/Person/Driving/driving_34.png" id="28_sqsla"]
+[ext_resource type="Texture2D" uid="uid://tnh28gns5s17" path="res://Images/Person/Sitdown/sitdown_26.png" id="29_5jiki"]
+[ext_resource type="Texture2D" uid="uid://cwimmqcta8600" path="res://Images/Person/Driving/driving_35.png" id="29_p3pvl"]
+[ext_resource type="Texture2D" uid="uid://ddbvirtcd4734" path="res://Images/Person/Driving/driving_36.png" id="30_onb0p"]
+[ext_resource type="Texture2D" uid="uid://b2hw3v6ejk84h" path="res://Images/Person/Sitdown/sitdown_27.png" id="30_q3ou8"]
+[ext_resource type="Texture2D" uid="uid://cbcrhsjd8bvwq" path="res://Images/Person/Driving/driving_37.png" id="31_6xifg"]
+[ext_resource type="Texture2D" uid="uid://dyojmugtcek4v" path="res://Images/Person/Sitdown/sitdown_28.png" id="31_n3hwa"]
+[ext_resource type="Texture2D" uid="uid://ecsd0lp775r3" path="res://Images/Person/Driving/driving_38.png" id="32_cdu6v"]
+[ext_resource type="Texture2D" uid="uid://ctm8y8f3568x7" path="res://Images/Person/Sitdown/sitdown_29.png" id="32_msa68"]
+[ext_resource type="Texture2D" uid="uid://bi03q0dcts3gn" path="res://Images/Person/Driving/driving_39.png" id="33_xnqr1"]
+[ext_resource type="Texture2D" uid="uid://cf4usbx0optan" path="res://Images/Person/Sitdown/sitdown_30.png" id="33_y47rg"]
+[ext_resource type="Texture2D" uid="uid://bfdww1se21t6b" path="res://Images/Person/Sitdown/sitdown_31.png" id="34_548uj"]
+[ext_resource type="Texture2D" uid="uid://b5l0bm0iy8yxf" path="res://Images/Person/Driving/driving_40.png" id="34_kpnd7"]
+[ext_resource type="Texture2D" uid="uid://33t8sr8x0bod" path="res://Images/Person/Sitdown/sitdown_32.png" id="35_s5csn"]
+[ext_resource type="Texture2D" uid="uid://caqcjmp6vsbjd" path="res://Images/Person/Sitdown/sitdown_33.png" id="36_auncd"]
+[ext_resource type="Texture2D" uid="uid://bqdel77bpe0xf" path="res://Images/Person/Sitdown/sitdown_34.png" id="37_1boy4"]
+[ext_resource type="Texture2D" uid="uid://n41tan3nc471" path="res://Images/Person/Sitdown/sitdown_35.png" id="38_o403b"]
+[ext_resource type="Texture2D" uid="uid://chuh5g45usmog" path="res://Images/Person/Sitdown/sitdown_36.png" id="39_lxk2c"]
+[ext_resource type="Texture2D" uid="uid://dkwxil1s4ugj3" path="res://Images/Person/Sitdown/sitdown_37.png" id="40_wfu8p"]
+[ext_resource type="Texture2D" uid="uid://ptf5kjs573ej" path="res://Images/Person/Sitdown/sitdown_38.png" id="41_xvsus"]
+[ext_resource type="Texture2D" uid="uid://cd0biey66hkpb" path="res://Images/Person/Sitdown/sitdown_39.png" id="42_osdm7"]
+[ext_resource type="Texture2D" uid="uid://dsgn2uquovoau" path="res://Images/Person/Sitdown/sitdown_40.png" id="43_ev6h7"]
+[ext_resource type="Texture2D" uid="uid://ciquxuhcjd5g3" path="res://Images/Person/Sitdown/sitdown_41.png" id="44_1at1w"]
+[ext_resource type="Texture2D" uid="uid://bi5b8kl4dgn6c" path="res://Images/Person/Sitdown/sitdown_42.png" id="45_np7p1"]
+[ext_resource type="Texture2D" uid="uid://dymal7kdfe68b" path="res://Images/Person/Sitdown/sitdown_43.png" id="46_eo5a4"]
+[ext_resource type="Texture2D" uid="uid://gqicq82685qi" path="res://Images/Person/Sitdown/sitdown_44.png" id="47_gyu72"]
+[ext_resource type="Texture2D" uid="uid://dolu17hqisu5" path="res://Images/Person/Sitdown/sitdown_45.png" id="48_7carg"]
+[ext_resource type="Texture2D" uid="uid://72tguelmuad1" path="res://Images/Person/Sitdown/sitdown_46.png" id="49_njwgh"]
+[ext_resource type="Texture2D" uid="uid://cb833cqjnt84h" path="res://Images/Person/Sitdown/sitdown_47.png" id="50_loa5o"]
+[ext_resource type="Texture2D" uid="uid://ccqmobkaoyfum" path="res://Images/Person/Sitdown/sitdown_48.png" id="51_hvp10"]
+[ext_resource type="Texture2D" uid="uid://wb2bnlrypxfe" path="res://Images/Person/Sitdown/sitdown_49.png" id="52_dft5t"]
+[ext_resource type="Texture2D" uid="uid://drbs1uj8ls3i8" path="res://Images/Person/Sitdown/sitdown_50.png" id="53_2rc2v"]
+[ext_resource type="Texture2D" uid="uid://b6mauupthldmb" path="res://Images/Person/Driving/driving_0.png" id="86_1x2tt"]
+[ext_resource type="Texture2D" uid="uid://brft3hcyjb64f" path="res://Images/Person/Driving/driving_1.png" id="87_8mdrs"]
+[ext_resource type="Texture2D" uid="uid://c51sdxsogefk1" path="res://Images/Person/Driving/driving_2.png" id="88_qxkym"]
+[ext_resource type="Texture2D" uid="uid://d1wq1m07xudms" path="res://Images/Person/Driving/driving_3.png" id="89_ydhmj"]
+[ext_resource type="Texture2D" uid="uid://cd2ruqcpl3wgu" path="res://Images/Person/Driving/driving_4.png" id="90_4ki1c"]
+[ext_resource type="Texture2D" uid="uid://ru1t06o2hoks" path="res://Images/Person/Driving/driving_5.png" id="91_pc8ok"]
+[ext_resource type="Texture2D" uid="uid://bciy730j02u25" path="res://Images/Person/Driving/driving_6.png" id="92_qw8ok"]
+[ext_resource type="Texture2D" uid="uid://bk70u30atgmog" path="res://Images/Person/Driving/driving_7.png" id="93_n5f1q"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2jke3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_1at1w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_np7p1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_eo5a4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_gyu72")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_7carg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_njwgh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_loa5o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_hvp10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_dft5t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_2rc2v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_dokyh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_bu6lk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_dhn6n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_5t2lp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_lsme0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_22631")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_bx6k7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_e7gfi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_vxesl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_xa1cf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_pplwc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_f5tqw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_uiphf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_qd778")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_58xbh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_jl0hw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_sqsla")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_p3pvl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_onb0p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_6xifg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_cdu6v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_xnqr1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_kpnd7")
+}],
+"loop": true,
+"name": &"driving",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": null
+}],
+"loop": true,
+"name": &"empty",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_moi5i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ugsaa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_uh2l3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_e6v2q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_2h7kr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_8xhp4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_57jkb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_5cpik")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_mcfvt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_f13g0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_7s0ku")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_crlcg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_fgmcv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_t5t3o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_uray6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_bm8b5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_my8dt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_0o1uh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_aismo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_akyn4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_8oqcs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_u132k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_jc2kb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_nctmf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_xphvq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_a8qsn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_5jiki")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_q3ou8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_n3hwa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_msa68")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_y47rg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_548uj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_s5csn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_auncd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_1boy4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_o403b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_lxk2c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_wfu8p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_xvsus")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_osdm7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_ev6h7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_1at1w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_np7p1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_eo5a4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_gyu72")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_7carg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_njwgh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_loa5o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_hvp10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_dft5t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_2rc2v")
+}],
+"loop": false,
+"name": &"entering",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("86_1x2tt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_8mdrs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_qxkym")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_ydhmj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_4ki1c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_pc8ok")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_qw8ok")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_n5f1q")
+}],
+"loop": false,
+"name": &"go_drive",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_eo5a4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_gyu72")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_7carg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_njwgh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_loa5o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_hvp10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_dft5t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_2rc2v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_dokyh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_bu6lk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_dhn6n")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 8.0
+}]
+
+[node name="CocheScene" type="Node2D"]
+script = ExtResource("1_ffpt8")
+
+[node name="RuedaR" type="Sprite2D" parent="."]
+position = Vector2(-387, 193.50003)
+scale = Vector2(0.1997992, 0.1997992)
+texture = ExtResource("1_2jke3")
+
+[node name="RuedaF" type="Sprite2D" parent="."]
+position = Vector2(454.99994, 193.50003)
+rotation = 1.5707964
+scale = Vector2(0.1997992, 0.1997992)
+texture = ExtResource("1_2jke3")
+
+[node name="Driver" type="AnimatedSprite2D" parent="."]
+position = Vector2(109, 33.5)
+scale = Vector2(4.065595, 4.065595)
+sprite_frames = SubResource("SpriteFrames_2jke3")
+animation = &"empty"
+
+[node name="Chasis" type="Sprite2D" parent="."]
+position = Vector2(60, 20.5)
+texture = ExtResource("2_mrli0")

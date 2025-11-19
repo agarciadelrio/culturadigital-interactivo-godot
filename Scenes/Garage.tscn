@@ -1,0 +1,67 @@
+[gd_scene load_steps=9 format=3 uid="uid://quh3kdytdq51"]
+
+[ext_resource type="Script" uid="uid://b71hlnaxg1dvb" path="res://Stages/Garage/garage.gd" id="1_brn5x"]
+[ext_resource type="Texture2D" uid="uid://cd3wsxrwg20ad" path="res://Stages/Garage/garage.png" id="2_hwuo4"]
+[ext_resource type="PackedScene" uid="uid://dcdi8x7n3pjq1" path="res://Characters/PersonLR/PersonLR.tscn" id="3_hwuo4"]
+[ext_resource type="PackedScene" uid="uid://df632t8kevi7q" path="res://Coche/CocheScene.tscn" id="4_cmfo0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cmfo0"]
+size = Vector2(57.85714, 321.42865)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_thip6"]
+size = Vector2(55.714283, 67.14285)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gk28h"]
+size = Vector2(77.85715, 104.28571)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uk7xp"]
+size = Vector2(101.428566, 62.85714)
+
+[node name="GarageScene" type="Node2D"]
+script = ExtResource("1_brn5x")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Garage" type="Node2D" parent="."]
+scale = Vector2(0.7, 0.7)
+
+[node name="Sprite2D" type="Sprite2D" parent="Garage"]
+texture = ExtResource("2_hwuo4")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Garage"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Garage/StaticBody2D"]
+position = Vector2(476.78546, 74.999985)
+scale = Vector2(0.99999964, 0.99999964)
+shape = SubResource("RectangleShape2D_cmfo0")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Garage/StaticBody2D"]
+position = Vector2(-444.2857, 20)
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("RectangleShape2D_thip6")
+
+[node name="DoorLeft" type="Area2D" parent="Garage"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Garage/DoorLeft"]
+position = Vector2(-431.4286, 125.71429)
+scale = Vector2(0.99999976, 0.99999976)
+shape = SubResource("RectangleShape2D_gk28h")
+debug_color = Color(0.8433067, 0.31044155, 0.5709149, 0.41960785)
+
+[node name="Person" parent="." instance=ExtResource("3_hwuo4")]
+position = Vector2(-231, 85)
+scale = Vector2(0.06, 0.06)
+
+[node name="Coche" parent="." instance=ExtResource("4_cmfo0")]
+position = Vector2(-23.000002, 97.000015)
+scale = Vector2(0.29, 0.29)
+
+[node name="CarDoor" type="Area2D" parent="Coche"]
+position = Vector2(79.31036, -334.48285)
+scale = Vector2(2.4137933, 2.4137933)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Coche/CarDoor"]
+position = Vector2(-5.0000043, 121.42856)
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("RectangleShape2D_uk7xp")
+debug_color = Color(0.9681707, 0.40738133, 0.72806203, 0.41960785)

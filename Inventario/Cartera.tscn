@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dkfdxnxpiuya6"]
+
+[ext_resource type="Texture2D" uid="uid://c2leirwk8iveo" path="res://Inventario/Cartera.png" id="1_f6n3q"]
+
+[node name="Cartera" type="Node2D"]
+
+[node name="Cartera" type="Sprite2D" parent="."]
+texture = ExtResource("1_f6n3q")

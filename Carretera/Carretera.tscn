@@ -1,0 +1,98 @@
+[gd_scene load_steps=9 format=3 uid="uid://ca5ak7fud8fo3"]
+
+[ext_resource type="Script" uid="uid://bjr6ulsuf6l8u" path="res://Carretera/Carretera.gd" id="1_00oa3"]
+[ext_resource type="Texture2D" uid="uid://dr75qg56wk2em" path="res://Carretera/Images/bg_sky.png" id="2_7m1jm"]
+[ext_resource type="Texture2D" uid="uid://dvv73xiw2aiih" path="res://Carretera/Images/bg_murete.png" id="3_fk4fv"]
+[ext_resource type="Texture2D" uid="uid://dajma16tghpt3" path="res://Carretera/Images/bg_nubes.jpg" id="3_iid35"]
+[ext_resource type="Texture2D" uid="uid://2tbfgg6nwhne" path="res://Carretera/Images/bg_asphalt.png" id="4_iid35"]
+[ext_resource type="PackedScene" uid="uid://df632t8kevi7q" path="res://Coche/CocheScene.tscn" id="5_7m1jm"]
+[ext_resource type="Texture2D" uid="uid://bp1iawycqvqsv" path="res://Carretera/Images/bg_palms.png" id="5_i4d4n"]
+[ext_resource type="PackedScene" uid="uid://bire32l0kj02x" path="res://Quiz/Quiz.tscn" id="8_iid35"]
+
+[node name="Carretera" type="Node2D"]
+script = ExtResource("1_00oa3")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+
+[node name="BgSky" type="Sprite2D" parent="."]
+scale = Vector2(0.7165178, 1.4487989)
+texture = ExtResource("2_7m1jm")
+centered = false
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+repeat_size = Vector2(2490, 0)
+autoscroll = Vector2(-10, 0)
+
+[node name="BgNubes" type="Sprite2D" parent="Parallax2D"]
+modulate = Color(1, 1, 1, 0.7372549)
+position = Vector2(0, -44.910534)
+scale = Vector2(1.7833332, 1.8106141)
+texture = ExtResource("3_iid35")
+centered = false
+
+[node name="Parallax2DMurete" type="Parallax2D" parent="."]
+scroll_offset = Vector2(3000, 0)
+repeat_size = Vector2(128, 0)
+repeat_times = 11
+
+[node name="BgMurete" type="Sprite2D" parent="Parallax2DMurete"]
+position = Vector2(650, 558)
+texture = ExtResource("3_fk4fv")
+centered = false
+
+[node name="Parallax2DAsphalt" type="Parallax2D" parent="."]
+repeat_size = Vector2(86, 0)
+repeat_times = 17
+
+[node name="BgAsphalt" type="Sprite2D" parent="Parallax2DAsphalt"]
+position = Vector2(557.00006, 607.07495)
+scale = Vector2(0.7, 1.0256754)
+texture = ExtResource("4_iid35")
+centered = false
+
+[node name="Parallax2DPalmsTras" type="Parallax2D" parent="."]
+repeat_size = Vector2(3150, 0)
+
+[node name="BgPalms" type="Sprite2D" parent="Parallax2DPalmsTras"]
+position = Vector2(1, -183.99997)
+scale = Vector2(1.7577778, 1.7577778)
+texture = ExtResource("5_i4d4n")
+centered = false
+
+[node name="CocheScene" parent="." instance=ExtResource("5_7m1jm")]
+position = Vector2(639.99994, 584)
+scale = Vector2(0.4, 0.4)
+
+[node name="Parallax2DPalms" type="Parallax2D" parent="."]
+repeat_size = Vector2(7154, 0)
+
+[node name="BgPalms" type="Sprite2D" parent="Parallax2DPalms"]
+position = Vector2(-130, -1084)
+scale = Vector2(4, 4)
+texture = ExtResource("5_i4d4n")
+centered = false
+
+[node name="Panel" type="Panel" parent="."]
+z_index = 1000
+offset_left = 1072.0
+offset_top = 55.0
+offset_right = 1237.0
+offset_bottom = 95.0
+
+[node name="km" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 8.0
+offset_top = -24.0
+offset_right = 166.0
+offset_bottom = 21.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+text = "KM: 0"
+
+[node name="Quiz" parent="." instance=ExtResource("8_iid35")]
+visible = false
+z_as_relative = false

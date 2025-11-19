@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dyuowldo5ga43"]
+
+[ext_resource type="Texture2D" uid="uid://dm2yfqf0x4ao8" path="res://Inventario/Llaves.png" id="1_u5jjh"]
+
+[node name="Llaves" type="Node2D"]
+
+[node name="Llaves" type="Sprite2D" parent="."]
+texture = ExtResource("1_u5jjh")

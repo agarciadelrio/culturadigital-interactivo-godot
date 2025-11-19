@@ -1,0 +1,53 @@
+[gd_scene load_steps=4 format=3 uid="uid://bo5rjolqkt1a0"]
+
+[sub_resource type="Theme" id="Theme_syhgp"]
+Button/font_sizes/font_size = 36
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_jmpx3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q42m0"]
+
+[node name="PanelCorcho" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BoxContainer" type="BoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+theme = SubResource("Theme_syhgp")
+alignment = 1
+
+[node name="Button" type="Button" parent="BoxContainer/VBoxContainer"]
+material = SubResource("CanvasItemMaterial_jmpx3")
+layout_mode = 2
+theme_override_colors/font_color = Color(0.448498, 0.99999994, 0.7178268, 1)
+theme_override_constants/outline_size = 11
+theme_override_constants/h_separation = 14
+theme_override_constants/align_to_largest_stylebox = 7
+theme_override_constants/line_spacing = 20
+theme_override_font_sizes/font_size = 39
+theme_override_styles/normal = SubResource("StyleBoxFlat_q42m0")
+text = "OPCION 1"
+
+[node name="Button2" type="Button" parent="BoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "OPCION 2"

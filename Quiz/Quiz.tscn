@@ -1,0 +1,308 @@
+[gd_scene load_steps=15 format=3 uid="uid://bire32l0kj02x"]
+
+[ext_resource type="Script" uid="uid://b1p6c8kgjiaxd" path="res://Quiz/quiz.gd" id="1_71eqh"]
+[ext_resource type="Shader" uid="uid://dvyyhdd51eqyi" path="res://Shaders/gradient_diagonal.gdshader" id="2_o0yts"]
+[ext_resource type="StyleBox" uid="uid://bx4j0l1qkkdel" path="res://Quiz/box.tres" id="3_ywu47"]
+[ext_resource type="StyleBox" uid="uid://byvu1ovdua5va" path="res://Quiz/box-hover.tres" id="4_6kpib"]
+[ext_resource type="PackedScene" uid="uid://hg5nbfml5j6v" path="res://Pruebas/TestConfetti.tscn" id="5_aclc4"]
+[ext_resource type="StyleBox" uid="uid://bbsyiep4pidq" path="res://Quiz/box-dis.tres" id="5_v4po6"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ywu47"]
+shader = ExtResource("2_o0yts")
+shader_parameter/color_center = Color(0.1, 0.3, 0.7, 1)
+shader_parameter/color_edge = Color(0, 0.05, 0.2, 1)
+shader_parameter/power = 2.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_15pbu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v4po6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5k5oc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_thp2f"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_o0yts"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ywu47"]
+content_margin_left = 199.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o0yts"]
+content_margin_left = 16.0
+content_margin_right = 16.0
+draw_center = false
+
+[node name="Quiz" type="Node2D"]
+z_index = 1000
+script = ExtResource("1_71eqh")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+z_index = 900
+material = SubResource("ShaderMaterial_ywu47")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(9.62615e-08, 0.34431386, 0.34467477, 1)
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="CanvasLayer"]
+z_index = 910
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HSeparator2" type="HSeparator" parent="CanvasLayer/VBoxContainer2"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_15pbu")
+
+[node name="Panel" type="Panel" parent="CanvasLayer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxEmpty_v4po6")
+
+[node name="Linea1" type="ColorRect" parent="CanvasLayer/VBoxContainer2/Panel"]
+custom_minimum_size = Vector2(0, 2)
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.6313726, 1, 0.99607843, 0.54509807)
+
+[node name="Panel2" type="Panel" parent="CanvasLayer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxEmpty_5k5oc")
+
+[node name="Linea2" type="ColorRect" parent="CanvasLayer/VBoxContainer2/Panel2"]
+custom_minimum_size = Vector2(0, 2)
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.6313726, 1, 0.99607843, 0.54509807)
+
+[node name="Panel3" type="Panel" parent="CanvasLayer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxEmpty_thp2f")
+
+[node name="Linea3" type="ColorRect" parent="CanvasLayer/VBoxContainer2/Panel3"]
+custom_minimum_size = Vector2(0, 2)
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.6313726, 1, 0.99607843, 0.54509807)
+
+[node name="HSeparator" type="HSeparator" parent="CanvasLayer/VBoxContainer2"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_15pbu")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+z_index = 920
+anchors_preset = -1
+anchor_left = 0.1359375
+anchor_top = 0.0625
+anchor_right = 0.9171875
+anchor_bottom = 0.95694447
+offset_left = -46.0
+offset_top = 3.0
+offset_right = -22.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 32
+alignment = 1
+
+[node name="Panel" type="Panel" parent="CanvasLayer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("3_ywu47")
+
+[node name="Title" type="Label" parent="CanvasLayer/VBoxContainer/Panel"]
+material = SubResource("ShaderMaterial_o0yts")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 0
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxTexture_ywu47")
+text = "8) ¿Qué concepto de Manovich se relaciona con cómo la interfaz NLE simula metáforas preexistentes (timeline, bins, etc.)?"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+text_overrun_behavior = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 32
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/VBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(300, 0)
+layout_direction = 1
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 32
+
+[node name="BtnA" type="Button" parent="CanvasLayer/VBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/normal = ExtResource("3_ywu47")
+theme_override_styles/hover = ExtResource("4_6kpib")
+theme_override_styles/disabled = ExtResource("5_v4po6")
+
+[node name="A" type="Label" parent="CanvasLayer/VBoxContainer/VBoxContainer/HBoxContainer/BtnA"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_o0yts")
+text = "8) ¿Qué concepto de Manovich se relaciona con cómo la interfaz NLE simula metáforas preexistentes (timeline, bins, etc.)?"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+justification_flags = 161
+
+[node name="BtnB" type="Button" parent="CanvasLayer/VBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/normal = ExtResource("3_ywu47")
+theme_override_styles/hover = ExtResource("4_6kpib")
+theme_override_styles/disabled = ExtResource("5_v4po6")
+
+[node name="B" type="Label" parent="CanvasLayer/VBoxContainer/VBoxContainer/HBoxContainer/BtnB"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_o0yts")
+text = "8) ¿Qué concepto de Manovich se relaciona con cómo la interfaz NLE simula metáforas preexistentes (timeline, bins, etc.)?"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+justification_flags = 161
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 32
+
+[node name="BtnC" type="Button" parent="CanvasLayer/VBoxContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/normal = ExtResource("3_ywu47")
+theme_override_styles/hover = ExtResource("4_6kpib")
+theme_override_styles/disabled = ExtResource("5_v4po6")
+
+[node name="C" type="Label" parent="CanvasLayer/VBoxContainer/VBoxContainer/HBoxContainer2/BtnC"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_o0yts")
+text = "8) ¿Qué concepto de Manovich se relaciona con cómo la interfaz NLE simula metáforas preexistentes (timeline, bins, etc.)?"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+justification_flags = 161
+
+[node name="BtnD" type="Button" parent="CanvasLayer/VBoxContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/normal = ExtResource("3_ywu47")
+theme_override_styles/hover = ExtResource("4_6kpib")
+theme_override_styles/disabled = ExtResource("5_v4po6")
+
+[node name="D" type="Label" parent="CanvasLayer/VBoxContainer/VBoxContainer/HBoxContainer2/BtnD"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 2
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_o0yts")
+text = "8) ¿Qué concepto de Manovich se relaciona con cómo la interfaz NLE simula metáforas preexistentes (timeline, bins, etc.)?"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+justification_flags = 161
+
+[node name="AttempCounter" type="Label" parent="CanvasLayer"]
+z_index = 920
+offset_right = 265.0
+offset_bottom = 60.0
+text = "ATTEMP"
+
+[node name="TestConfetti" parent="CanvasLayer" instance=ExtResource("5_aclc4")]
+z_index = 1000
+
+[node name="BtnClose" type="Button" parent="CanvasLayer"]
+z_index = 1000
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -96.0
+offset_top = -88.0
+offset_right = 96.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "CERRAR"
+
+[connection signal="button_down" from="CanvasLayer/BtnClose" to="." method="_on_button_button_down"]

@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://dg7nv80ubb8mr"]
+
+[ext_resource type="Script" uid="uid://brgcafqb0wqrd" path="res://Stages/Shop/shop.gd" id="1_7ae35"]
+[ext_resource type="Texture2D" uid="uid://c72udj5hygoqq" path="res://Stages/Shop/Shop.png" id="2_f511j"]
+[ext_resource type="StyleBox" uid="uid://3th3b5nn5d85" path="res://Shaders/btn-inventary-hover.tres" id="3_i4qx4"]
+[ext_resource type="PackedScene" uid="uid://cav24f7putkgy" path="res://Inventario/Cinta.tscn" id="3_lagin"]
+
+[node name="ShopScene" type="Node2D"]
+script = ExtResource("1_7ae35")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Shop" type="Node2D" parent="."]
+scale = Vector2(0.7, 0.7)
+
+[node name="Sprite2D" type="Sprite2D" parent="Shop"]
+texture = ExtResource("2_f511j")
+
+[node name="BtnCinta" type="Button" parent="."]
+custom_minimum_size = Vector2(100, 100)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 56.0
+offset_top = 96.0
+offset_right = 250.0
+offset_bottom = 218.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.43999863, 0.43999863)
+theme_override_styles/hover = ExtResource("3_i4qx4")
+
+[node name="Cinta" parent="BtnCinta" instance=ExtResource("3_lagin")]
+position = Vector2(95.99999, 63.999996)
+scale = Vector2(0.91999817, 0.91999817)
+
+[connection signal="pressed" from="BtnCinta" to="." method="_on_btn_cinta_pressed"]

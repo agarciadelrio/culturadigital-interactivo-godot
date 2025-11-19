@@ -1,0 +1,110 @@
+[gd_scene load_steps=6 format=3 uid="uid://c3i0yq7dfbda5"]
+
+[ext_resource type="Script" uid="uid://slib2rdws33s" path="res://Scenes/home.gd" id="1_3wroe"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xtytc"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xtytc"]
+expand_margin_left = 64.0
+expand_margin_top = 32.0
+expand_margin_right = 64.0
+expand_margin_bottom = 32.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oauki"]
+expand_margin_left = 64.0
+expand_margin_top = 32.0
+expand_margin_right = 64.0
+expand_margin_bottom = 32.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3wroe"]
+bg_color = Color(0.44738185, 0.6639163, 0.7013254, 1)
+expand_margin_left = 64.0
+expand_margin_top = 32.0
+expand_margin_right = 64.0
+expand_margin_bottom = 32.0
+
+[node name="Home" type="Node2D"]
+script = ExtResource("1_3wroe")
+
+[node name="Container" type="BoxContainer" parent="."]
+z_index = 2000
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 161.0
+offset_top = 36.0
+offset_right = 1124.0
+offset_bottom = 706.0
+grow_horizontal = 2
+grow_vertical = 2
+vertical = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Container"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="Container/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 64
+text = "20.644 - Cultura Digital - Aula 1"
+horizontal_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="Container/VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="Container/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 58
+text = "Mi interactivo (sobre remediación)"
+horizontal_alignment = 1
+
+[node name="HSeparator2" type="HSeparator" parent="Container/VBoxContainer"]
+custom_minimum_size = Vector2(0, 98)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_xtytc")
+
+[node name="BtnEnter" type="Button" parent="Container/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_xtytc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_oauki")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3wroe")
+text = "INTERACTUAR"
+
+[node name="HSeparator3" type="HSeparator" parent="Container/VBoxContainer"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_xtytc")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Container/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 10
+
+[node name="Label3" type="Label" parent="Container/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 10
+theme_override_font_sizes/font_size = 19
+text = "Mover: teclas del cursor
+Coger objetos: click ratón
+Salir habitación: Flecha 🔽"
+vertical_alignment = 2
+
+[node name="Label4" type="Label" parent="Container/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 24
+text = "Por Antonio M. García del Río"
+horizontal_alignment = 2
+
+[node name="Camera2D" type="Camera2D" parent="."]
+z_index = 3000
+anchor_mode = 0
+
+[connection signal="pressed" from="Container/VBoxContainer/BtnEnter" to="." method="_on_btn_enter_pressed"]

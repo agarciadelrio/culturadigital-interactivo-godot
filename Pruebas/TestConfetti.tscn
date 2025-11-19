@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://hg5nbfml5j6v"]
+
+[ext_resource type="Script" uid="uid://xrwe7vspxicr" path="res://Pruebas/test_confetti.gd" id="1_8gomp"]
+
+[node name="TestConfetti" type="Node2D"]
+script = ExtResource("1_8gomp")
+
+[node name="Confetti" type="CPUParticles2D" parent="."]
+position = Vector2(620, 691)
+emitting = false

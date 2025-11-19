@@ -1,0 +1,70 @@
+[gd_scene load_steps=8 format=3 uid="uid://dcj3mxf2aups3"]
+
+[ext_resource type="Script" uid="uid://b1ojpxpg7280n" path="res://Stages/Street/street.gd" id="1_kpbgp"]
+[ext_resource type="Texture2D" uid="uid://bok3a8q8grli7" path="res://Stages/Street/Street-Manovich.jpg" id="2_hno7y"]
+[ext_resource type="PackedScene" uid="uid://dcdi8x7n3pjq1" path="res://Characters/PersonLR/PersonLR.tscn" id="3_hno7y"]
+[ext_resource type="PackedScene" uid="uid://df632t8kevi7q" path="res://Coche/CocheScene.tscn" id="4_dx7jg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hno7y"]
+size = Vector2(40, 337.14285)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hno7y"]
+radius = 51.606834
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dx7jg"]
+radius = 37.01351
+
+[node name="StreetScene" type="Node2D"]
+script = ExtResource("1_kpbgp")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Street" type="Node2D" parent="."]
+scale = Vector2(0.7, 0.7)
+
+[node name="Sprite2D" type="Sprite2D" parent="Street"]
+texture = ExtResource("2_hno7y")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Street"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Street/StaticBody2D"]
+position = Vector2(-521.4286, 194.2857)
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("RectangleShape2D_hno7y")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Street/StaticBody2D"]
+position = Vector2(514.2857, 194.2857)
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("RectangleShape2D_hno7y")
+
+[node name="PersonLRScene" parent="." instance=ExtResource("3_hno7y")]
+position = Vector2(-200.00002, 176)
+scale = Vector2(0.06, 0.06)
+speed = 80.0
+
+[node name="CocheScene" parent="." instance=ExtResource("4_dx7jg")]
+position = Vector2(-525, 214.00002)
+scale = Vector2(0.27, 0.27)
+
+[node name="CarDoor" type="Area2D" parent="CocheScene"]
+position = Vector2(692.5926, -792.59265)
+scale = Vector2(2.5925925, 2.5925925)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CocheScene/CarDoor"]
+position = Vector2(-254.28572, 280)
+shape = SubResource("CircleShape2D_hno7y")
+debug_color = Color(0.8442957, 0.29721177, 0.60687935, 0.41960785)
+
+[node name="ShopDoor" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ShopDoor"]
+position = Vector2(232, 168)
+shape = SubResource("CircleShape2D_dx7jg")
+debug_color = Color(0.89806664, 0.23921841, 0.5255987, 0.41960785)
+
+[node name="ColorRect" type="ColorRect" parent="ShopDoor"]
+offset_left = -703.0
+offset_top = 152.0
+offset_right = -358.0
+offset_bottom = 294.0
+color = Color(0, 0, 0, 1)

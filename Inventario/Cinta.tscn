@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cav24f7putkgy"]
+
+[ext_resource type="Texture2D" uid="uid://s8r06altgnwr" path="res://Inventario/Cinta.png" id="1_mns7n"]
+
+[node name="Cinta" type="Node2D"]
+
+[node name="Cinta" type="Sprite2D" parent="."]
+texture = ExtResource("1_mns7n")

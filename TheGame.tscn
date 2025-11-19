@@ -1,0 +1,88 @@
+[gd_scene load_steps=6 format=3 uid="uid://c71w31ma2frkb"]
+
+[ext_resource type="Script" uid="uid://bjvm1xin76v64" path="res://TheGame.gd" id="1_733bd"]
+[ext_resource type="PackedScene" uid="uid://bp01ip74ows31" path="res://Scenes/MainScene.tscn" id="3_733bd"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_733bd"]
+bg_color = Color(0, 0, 0, 0.5019608)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_733bd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s7b7n"]
+
+[node name="TheGame" type="Node2D"]
+script = ExtResource("1_733bd")
+
+[node name="PanelLateral" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="Panel" parent="PanelLateral"]
+anchors_preset = -1
+anchor_left = 0.0140625
+anchor_top = 0.030555556
+anchor_right = 0.20625
+anchor_bottom = 0.6388889
+theme_override_styles/panel = SubResource("StyleBoxFlat_733bd")
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelLateral"]
+anchors_preset = -1
+anchor_left = 0.0265625
+anchor_top = 0.048611112
+anchor_right = 0.2125
+anchor_bottom = 0.93333334
+metadata/_edit_use_anchors_ = true
+
+[node name="LblReaded" type="Label" parent="PanelLateral/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Fichas leídas:"
+
+[node name="LblOk" type="Label" parent="PanelLateral/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Preguntas acertadas:"
+
+[node name="LblFail" type="Label" parent="PanelLateral/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Preguntas falladas:"
+
+[node name="HSeparator" type="HSeparator" parent="PanelLateral/VBoxContainer"]
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_733bd")
+
+[node name="LabelInv" type="Label" parent="PanelLateral/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "INVENTARIO:"
+
+[node name="HSeparator2" type="HSeparator" parent="PanelLateral/VBoxContainer"]
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_733bd")
+
+[node name="Panel" type="Panel" parent="PanelLateral/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_s7b7n")
+
+[node name="InventoryBox" type="VBoxContainer" parent="PanelLateral/VBoxContainer/Panel"]
+z_index = 200
+custom_minimum_size = Vector2(72, 10)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -76.0
+offset_right = -4.0
+offset_bottom = 10.0
+grow_horizontal = 2
+size_flags_horizontal = 0
+size_flags_vertical = 3
+
+[node name="MainScene" parent="." instance=ExtResource("3_733bd")]

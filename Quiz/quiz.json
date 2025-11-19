@@ -1,0 +1,71 @@
+[
+	{
+		"title": "Remediación y Edición de Vídeo",
+		"questions": [
+			{
+				"title": "¿Qué es la remediación según\nLev Manovich?",
+				"A": "La transformación de un archivo de vídeo en distintos formatos",
+				"B": "El proceso por el cual un medio reinterpreta, absorbe o adapta a otro medio anterior",
+				"C": "La sustitución de un medio por otro más moderno",
+				"D": "La creación de interfaces gráficas para vídeo",
+				"correct": "B"
+			},
+			{
+				"title": "¿Qué caracteriza a la edición de vídeo lineal tradicional?",
+				"A": "Permite saltar entre clips sin importar el orden",
+				"B": "Requiere trabajar de forma secuencial sobre cintas magnéticas",
+				"C": "Utiliza exclusivamente software digital",
+				"D": "Se basa en proyectos con capas múltiples",
+				"correct": "B"
+			},
+			{
+				"title": "¿Cuál es una característica clave de la edición \"no lineal\" (NLE)?",
+				"A": "Los cambios no se pueden deshacer",
+				"B": "Requiere hardware analógico especializado",
+				"C": "Permite acceder a cualquier punto del material sin alterar el original",
+				"D": "Funciona solo con vídeo grabado en cinta",
+				"correct": "C"
+			},
+			{
+				"title": "¿Por qué la edición \"no lineal\" puede considerarse una forma de remediación?",
+				"A": "Porque imita visualmente la forma de una cinta de vídeo",
+				"B": "Porque mejora, reinterpreta y supera las limitaciones del montaje lineal",
+				"C": "Porque elimina para siempre el montaje lineal",
+				"D": "Porque mantiene exactamente el mismo flujo de trabajo",
+				"correct": "B"
+			},
+			{
+				"title": "¿Qué ventaja clave ofrece la edición\n\"no lineal\" frente a la lineal?",
+				"A": "Los efectos se aplican manualmente cuadro a cuadro",
+				"B": "Menor necesidad de almacenamiento",
+				"C": "Flexibilidad total: cortar, mover y modificar sin destruir el material",
+				"D": "Requiere menos conocimientos técnicos",
+				"correct": "C"
+			},
+			{
+				"title": "¿Qué elemento de la edición lineal hace más difícil el proceso creativo?",
+				"A": "Los clips se importan muy rápido",
+				"B": "El orden del montaje no se puede alterar sin rehacer trabajo",
+				"C": "Los efectos tienen demasiadas opciones",
+				"D": "La calidad del vídeo es demasiado alta",
+				"correct": "B"
+			},
+			{
+				"title": "¿Cuál de las siguientes tecnologías es esencial para la edición \"no lineal\" moderna?",
+				"A": "Reproductores de cinta U-Matic",
+				"B": "Salas de edición analógica",
+				"C": "Digitalización y almacenamiento en disco",
+				"D": "Mesas de corte físicas",
+				"correct": "C"
+			},
+			{
+				"title": "¿Qué concepto de Manovich se relaciona con cómo la interfaz NLE simula metáforas preexistentes (timeline, bins, etc.)?",
+				"A": "Narrativa transmedia",
+				"B": "Automatización",
+				"C": "Remediación de medios previos",
+				"D": "Espacialización de datos",
+				"correct": "C"
+			}
+		]
+	}
+]

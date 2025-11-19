@@ -1,0 +1,80 @@
+[
+	{
+		"title": "Tarjetas informativas",
+		"cards": [
+			{
+				"title": "¿Qué es la edición lineal?",
+				"info": "La edición lineal es un proceso secuencial propio de la era analógica. Se montaba directamente sobre cintas de vídeo, lo que obligaba a seguir un orden fijo y rehacer partes completas si era necesario modificar algo."
+			},
+			{
+				"title": "¿Qué es la edición no lineal (NLE)?",
+				"info": "Es un sistema digital que permite acceder a cualquier parte del material sin necesidad de seguir un orden estricto. Usa archivos digitales, timelines flexibles y permite edición libre, no destructiva."
+			},
+			{
+				"title": "Remediación según Manovich",
+				"info": "La remediación ocurre cuando un medio nuevo absorbe, transforma o reconfigura un medio anterior. No lo borra: lo integra y lo supera, adaptando sus lógicas a un entorno nuevo."
+			},
+			{
+				"title": "¿Por qué la NLE remedia a la ed. lineal?",
+				"info": "Porque toma los principios del montaje tradicional (puntos de entrada/salida, cortes, continuidad) y los reinterpreta en un espacio digital flexible. Respeta la lógica del medio anterior, pero la amplifica."
+			},
+			{
+				"title": "Interfaz de Timeline",
+				"info": "La “línea de tiempo” de un editor no lineal es una metáfora heredada del cine y el vídeo. Emula el avance físico del metraje, aunque por dentro todo sea digital y aleatorio."
+			},
+			{
+				"title": "Edición no destructiva",
+				"info": "En una NLE, los cambios no alteran los archivos originales. Todas las operaciones se guardan como instrucciones, lo que permite experimentar sin riesgo."
+			},
+			{
+				"title": "Ventajas creativas de la NLE",
+				"info": "Se pueden probar múltiples versiones, crear ramificaciones, reorganizar escenas y aplicar efectos sin perder tiempo. Esto potencia una creatividad iterativa que era casi imposible con las cintas."
+			}
+		]
+	},
+	{
+		"title": "Tarjetas informativas sobre iMovie en el ecosistema Apple",
+		"cards": [
+			{
+				"title": "iMovie, un editor multiplataforma",
+				"info": "iMovie forma parte del ecosistema Apple y está disponible en iOS, iPadOS y macOS. Su diseño unificado permite empezar un proyecto en un iPhone, continuarlo en un iPad y finalizarlo en un Mac sin perder calidad ni datos."
+			},
+			{
+				"title": "Continuidad entre dispositivos",
+				"info": "Gracias a iCloud, iMovie sincroniza bibliotecas, proyectos y contenido multimedia. Esto permite una edición fluida: grabas en iPhone, montas en iPad y exportas desde Mac con total continuidad."
+			},
+			{
+				"title": "Interfaz adaptada a cada dispositivo",
+				"info": "Aunque comparte la misma lógica visual, iMovie adapta su interfaz:\n• iPhone: edición táctil simplificada},\n• iPad: mayor precisión, multitarea y pantalla dividida\n• Mac: timeline amplio y controles avanzados\nTodo sin cambiar la filosofía de uso."
+			},
+			{
+				"title": "Edición No Destructiva",
+				"info": "La edición en iMovie es no destructiva en cualquiera de sus versiones. Los clips originales permanecen intactos y los ajustes se sincronizan como “instrucciones”, permitiendo experimentar libremente en cualquier dispositivo."
+			},
+			{
+				"title": "Cámara + Edición instantánea",
+				"info": "La fortaleza del ecosistema: grabas en el iPhone y automáticamente aparece en iMovie del iPad o Mac vía Fotos e iCloud. Se elimina el paso de transferencia manual y se acelera el flujo creativo."
+			},
+			{
+				"title": "Portabilidad del proyecto",
+				"info": "Los proyectos creados en iPhone o iPad pueden enviarse a un Mac para continuar la edición con más comodidad. iMovie reconoce la estructura del proyecto y mantiene títulos, transiciones, música y efectos."
+			},
+			{
+				"title": "Biblioteca compartida",
+				"info": "El contenido se organiza en bibliotecas que se sincronizan mediante iCloud Drive. Así, el material está disponible en todos los dispositivos sin duplicaciones innecesarias y sin perder orden."
+			},
+			{
+				"title": "Efectos y títulos coherentes",
+				"info": "Las plantillas, filtros y títulos de iMovie funcionan de forma consistente en iOS, iPadOS y macOS. Esto garantiza que un proyecto mantenga su estética incluso si lo editas en diferentes equipos."
+			},
+			{
+				"title": "Exportación flexible",
+				"info": "Desde cualquiera de las plataformas puedes exportar en HD o 4K, enviar a Fotos, compartir directamente en redes o transferir el archivo final a otro dispositivo. La experiencia es prácticamente idéntica estés donde estés."
+			},
+			{
+				"title": "Apple Silicon e integración nativa",
+				"info": "En Mac, iMovie aprovecha Apple Silicon para previsualizaciones rápidas, renderizado casi instantáneo y exportaciones más eficientes. La transición entre móvil y escritorio se vuelve transparente."
+			}
+		]
+	}
+]
