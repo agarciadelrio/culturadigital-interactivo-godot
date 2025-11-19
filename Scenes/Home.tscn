@@ -90,9 +90,10 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 10
 theme_override_font_sizes/font_size = 19
-text = "Mover: teclas del cursor
+text = "Objetivo: grabar una cinta de vídeo
+Mover: teclas del cursor
 Coger objetos: click ratón
-Salir habitación: Flecha 🔽"
+Salir habitación: Flecha hacia abajo"
 vertical_alignment = 2
 
 [node name="Label4" type="Label" parent="Container/VBoxContainer/HBoxContainer"]

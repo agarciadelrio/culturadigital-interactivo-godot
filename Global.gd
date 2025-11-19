@@ -39,7 +39,6 @@ func reset_counters():
 	count_fail = 0
 	print_counters()
 
-
 func set_pick_item_signal(_node: Node):
 	print("SETTING PICK ITEM SIGNAL")
 	#self.get_tree().node_added.connect(_on_node_added)
@@ -105,7 +104,24 @@ func _insert_in_the_game_inventory_box(item_id: String) -> void:
 	# Guardamos el ID para evitar duplicados
 	item_icon.set_meta("item_id", item_id)	
 	box.add_child(item_icon)
-		
+
+func _reset_inventory_box() -> void:
+	if not the_game:
+		return
+	
+	var box: VBoxContainer = the_game.get_node_or_null("PanelLateral/VBoxContainer/Panel/InventoryBox")
+	if not box:
+		push_error("InventoryBox no encontrado")
+		return
+	
+	# Borramos todos los hijos y esperamos a que se liberen
+	for child in box.get_children():
+		child.queue_free()
+	
+	# Esperamos un frame para que Godot termine de limpiar
+	await get_tree().process_frame	
+	#print("Inventario reiniciado")
+
 func load_quiz_once() -> void:
 	if quiz_loaded:
 		return  # ← Ya cargado, no hacemos nada
@@ -169,3 +185,8 @@ func inc_fail():
 	if not the_game: return
 	count_fail += 1
 	print_counters()
+	
+func reset_inventory():
+	inventory = []
+	second_chance = false
+	_reset_inventory_box()

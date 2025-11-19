@@ -19,7 +19,6 @@ func _ready() -> void:
 	change_room(Global.ROOM_ENTER)	
 	ui_hide()
 	
-
 # ------------------------------------------------------------------
 # Función llamada desde Global.change_room()
 func change_room(scene_path: String) -> void:

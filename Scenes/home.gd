@@ -7,4 +7,5 @@ func _ready() -> void:
 
 func _on_btn_enter_pressed() -> void:
 	Global.reset_counters()
+	Global.reset_inventory()
 	Global.change_room(Global.ROOM_LIVING)
